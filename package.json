@@ -1,0 +1,26 @@
+{
+    "name": "poptip",
+    "version": "0.1.2",
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./dist/poptip.js",
+            "require": "./dist/poptip.umd.cjs"
+        }
+    },
+    "typings": "./dist/poptip.d.ts",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.25",
+        "prettier": "^3.2.5",
+        "typescript": "^5.2.2",
+        "vite": "^5.1.4",
+        "vite-plugin-dts": "^3.7.3"
+    },
+    "files": [
+        "./dist"
+    ]
+}
