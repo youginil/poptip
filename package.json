@@ -14,11 +14,11 @@
         "build": "tsc && vite build"
     },
     "devDependencies": {
-        "@types/node": "^20.11.25",
+        "@types/node": "^20.12.12",
         "prettier": "^3.2.5",
-        "typescript": "^5.2.2",
-        "vite": "^5.1.4",
-        "vite-plugin-dts": "^3.7.3"
+        "typescript": "^5.4.5",
+        "vite": "^5.2.11",
+        "vite-plugin-dts": "^3.9.1"
     },
     "files": [
         "./dist"
