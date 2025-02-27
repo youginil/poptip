@@ -25,7 +25,7 @@ type OtherConfig = Omit<Config, 'type' | 'content'>;
 
 const hiddenClass = 'poptip-hidden';
 const gap = 20;
-const live = 2500;
+const live = 2500 * 100;
 const pops: PopItem[] = [];
 
 const nextId = (() => {
