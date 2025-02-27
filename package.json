@@ -1,11 +1,15 @@
 {
     "name": "poptip",
-    "version": "0.1.6",
+    "version": "0.1.8",
     "type": "module",
     "exports": {
         ".": {
             "import": "./dist/poptip.js",
             "require": "./dist/poptip.umd.cjs"
+        },
+        "./dist/*.css": {
+            "import": "./dist/*.css",
+            "require": "./dist/*.css"
         }
     },
     "typings": "./dist/poptip.d.ts",
