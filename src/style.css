@@ -18,6 +18,10 @@
     background-color: #e6f4ff;
     border-color: #91caff;
 }
+.poptip.success {
+    background-color: #3df59f;
+    border-color: #1ccc7a;
+}
 .poptip.warn {
     background-color: #fffbe6;
     border-color: #ffe58f;

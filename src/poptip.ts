@@ -8,6 +8,7 @@ interface PopItem {
 
 enum MsgType {
     Info = 'info',
+    Success = 'success',
     Warn = 'warn',
     Error = 'error',
 }
@@ -137,6 +138,7 @@ function generate(
 
 const poptip = {
     info: generate(MsgType.Info),
+    success: generate(MsgType.Success),
     warn: generate(MsgType.Warn),
     error: generate(MsgType.Error),
 };
