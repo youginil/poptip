@@ -13,22 +13,45 @@
     align-items: center;
     padding: 10px 16px;
     opacity: 1;
-}
-.poptip.info {
-    background-color: #e6f4ff;
-    border-color: #91caff;
-}
-.poptip.success {
-    background-color: #3df59f;
-    border-color: #1ccc7a;
-}
-.poptip.warn {
-    background-color: #fffbe6;
-    border-color: #ffe58f;
-}
-.poptip.error {
-    background-color: #fff2f0;
-    border-color: #ffccc7;
+
+    & > .flag {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        opacity: 0.7;
+        margin-right: 8px;
+    }
+    &.info {
+        background-color: #e6f4ff;
+        border-color: #91caff;
+        & > .flag {
+            background-image: url(assets/info.svg);
+        }
+    }
+    &.success {
+        background-color: #f6ffed;
+        border-color: #b7eb8f;
+        > .flag {
+            background-image: url(assets/success.svg);
+        }
+    }
+    &.warn {
+        background-color: #fffbe6;
+        border-color: #ffe58f;
+        > .flag {
+            background-image: url(assets/warn.svg);
+        }
+    }
+    &.error {
+        background-color: #fff2f0;
+        border-color: #ffccc7;
+        > .flag {
+            background-image: url(assets/error.svg);
+        }
+    }
 }
 .poptip.poptip-hidden {
     transform: translate(-50%, -50px);
@@ -48,12 +71,14 @@
     line-height: 26px;
     font-size: 20px;
     text-align: center;
+    border-radius: 50%;
     cursor: pointer;
     flex-shrink: 0;
     opacity: 0.6;
+    transition: background-color 0.3s ease-in-out;
     margin-left: 8px;
 }
-
 .poptip-close:hover {
     opacity: 1;
+    background-color: #dddddd;
 }

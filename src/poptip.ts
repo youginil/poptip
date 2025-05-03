@@ -72,6 +72,10 @@ function createPopElement(id: number, config: Config): HTMLElement {
     const style = el.style;
     style.margin = `0 ${gap}px`;
 
+    const flagEl = document.createElement('span');
+    flagEl.className = 'flag';
+    el.appendChild(flagEl);
+
     const mainEl = document.createElement('div');
     mainEl.className = 'poptip-main';
     el.appendChild(mainEl);
