@@ -1,6 +1,8 @@
 .poptip-wrapper {
     position: fixed;
     width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
     left: 0;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -15,6 +17,7 @@
     }
 }
 .poptip {
+    box-sizing: border-box;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
@@ -27,6 +30,7 @@
     pointer-events: all;
 
     & > .flag {
+        box-sizing: border-box;
         display: inline-block;
         width: 20px;
         height: 20px;
@@ -66,9 +70,11 @@
     }
 }
 .poptip-main {
+    box-sizing: border-box;
     flex-grow: 1;
 }
 .poptip-title {
+    box-sizing: border-box;
     padding-bottom: 10px;
     font-size: 1.25rem;
 }
