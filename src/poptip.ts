@@ -67,10 +67,12 @@ function removeById(id: number) {
 }
 
 function createPopElement(id: number, config: Config): HTMLElement {
+    const wrapper = document.createElement('div');
+    wrapper.className = `poptip-wrapper ${hiddenClass}`;
+
     const el = document.createElement('div');
-    el.className = `poptip ${config.type} ${hiddenClass}`;
-    const style = el.style;
-    style.margin = `0 ${gap}px`;
+    el.className = `poptip ${config.type}`;
+    wrapper.appendChild(el);
 
     const flagEl = document.createElement('span');
     flagEl.className = 'flag';
@@ -103,7 +105,7 @@ function createPopElement(id: number, config: Config): HTMLElement {
         });
     }
 
-    return el;
+    return wrapper;
 }
 
 function popup(config: Config) {
